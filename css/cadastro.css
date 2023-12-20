@@ -6,8 +6,17 @@
   font-family: 'Roboto', sans-serif;
 }
 
+:root {
+  --white: #f2f2f2;
+  --main: #f2f2f2;
+  --backcor: #BFA08E;
+  --textcolor1: #272262;
+  --textcolor2: #4038a0;
+}
+
+
 body {
-  background-color: #6bbef9;
+  background-color: var(--backcor);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
@@ -22,7 +31,7 @@ body {
 }
 
 .card {
-  background-color: #ccdcf3;
+  background-color: var(--main);
   padding: 30px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060;
@@ -32,7 +41,7 @@ body {
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color: #0d009c
+  color: var(--textcolor1);
 }
 
 .label-float input{
@@ -40,7 +49,7 @@ h1{
   padding: 5px 5px;
   display: inline-block;
   border: 0;
-  border-bottom: 2px solid #0d009c;
+  border-bottom: 2px solid var(--textcolor1);
   background-color: transparent;
   outline: none;
   min-width: 180px;
@@ -58,11 +67,11 @@ h1{
 }
 
 .label-float input:focus{
-  border-bottom: 2px solid #4038a0;
+  border-bottom: 2px solid --textcolor2;
 }
 
 .label-float label{
-  color: #0d009c;
+  color: var(--textcolor1);
   position: absolute;
   top: 0;
   left: 0;
@@ -74,13 +83,13 @@ h1{
 .label-float input:valid + label{
   font-size: 13px;
   margin-top: 0;
-  color: #4038a0
+  color: var(--textcolor2);
 }
 
 button{
   background-color: transparent;
-  border-color: #0d009c;
-  color: #0d009c;
+  border-color: var(--textcolor1);
+  color: var(--textcolor1)c;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;
@@ -92,7 +101,7 @@ button{
 }
 
 button:hover{
-  background-color: #0d009c;
+  background-color: var(--textcolor1);
   color: #fff;
 }
 
@@ -106,7 +115,7 @@ button:hover{
   top: 15px;
   right: 10px;
   cursor: pointer;
-  color: #0d009c;
+  color: var(--textcolor1);
 }
 
 #msgError{
